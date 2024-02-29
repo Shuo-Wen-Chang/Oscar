@@ -32,7 +32,12 @@
 \f0 \'94 (
 \f1 \'b4\'a3\'a5\'e6\'a7\'f3\'b7\'73\'aa\'a9\'a5\'bb
 \f0 )\
-{\listtext	6.	}git push remote_repo localbranch:remotebranch (
+{\listtext	6.	}git commit \'97amend \'93
+\f1 \'b7\'73\'b1\'d4\'ad\'7a
+\f0 \'94 (
+\f1 \'a7\'f3\'b7\'73\'ad\'ec\'a6\'b3\'b4\'a3\'a5\'e6\'b1\'d4\'ad\'7a
+\f0 )\
+{\listtext	7.	}git push remote_repo localbranch:remotebranch (
 \f1 \'bb\'b7\'ba\'dd\'a7\'f3\'b7\'73\'aa\'a9\'a5\'bb
 \f0  (push -u 
 \f1 \'a5\'69\'a5\'48\'ab\'fc\'a9\'77\'c0\'71\'bb\'7b
@@ -64,12 +69,22 @@
 {\listtext	2.	}git clone \'97branch branchname \'97single-branch url (
 \f1 \'c0\'78\'a6\'73 remote repo \'a4\'57\'af\'53\'a9\'77\'aa\'ba
 \f0  branch)\
-{\listtext	3.	}git pull remote_repo remotebranch:localbranch (
+{\listtext	3.	}git -C foldername pull (
+\f1 \'a7\'e2\'bb\'b7\'ba\'dd\'bc\'c6\'be\'da\'ae\'77\'aa\'ba\'a7\'f3\'b0\'ca\'a7\'f3\'b7\'73\'a6\'dc\'a5\'bb\'be\'f7\'a1\'41\'b6\'c8\'ad\'ad\'ad\'ec\'a8\'d3 clone \'aa\'ba\'a8\'d3\'b7\'bd
+\f0 )\
+{\listtext	4.	}git pull remote_repo remotebranch:localbranch (
 \f1 \'b1\'4e
 \f0  remote_repo 
 \f1 \'b8\'cc\'a6\'57\'ac\'b0
 \f0  remotebranch 
-\f1 \'aa\'ba\'a4\'c0\'a4\'e4\'a7\'ec\'a8\'ec\'a5\'bb\'a6\'61\'ba\'dd\'a6\'57\'ac\'b0 localbranch \'aa\'ba\'a4\'c0\'a4\'e4
+\f1 \'aa\'ba\'a4\'c0\'a4\'e4\'a7\'ec\'a8\'ec\'a5\'bb\'a6\'61\'ba\'dd\'a6\'57\'ac\'b0 localbranch \'aa\'ba\'a4\'c0\'a4\'e4\'a1\'41\'a5\'fe\'a7\'ec
+\f0 )\
+\ls2\ilvl0{\listtext	5.	}git fetch remote_repo remotebranch:localbranch (
+\f1 \'b1\'4e
+\f0  remote_repo 
+\f1 \'b8\'cc\'a6\'57\'ac\'b0
+\f0  remotebranch 
+\f1 \'aa\'ba\'a4\'c0\'a4\'e4\'a7\'ec\'a8\'ec\'a5\'bb\'a6\'61\'ba\'dd\'a6\'57\'ac\'b0 localbranch \'aa\'ba\'a4\'c0\'a4\'e4\'a1\'41\'a5\'75\'a7\'ec\'a6\'b3\'c5\'dc\'b0\'ca\'aa\'ba
 \f0 )\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 \cf0 \
@@ -125,7 +140,7 @@
 \f0 git checkout branch (HEAD 
 \f1 \'aa\'ba
 \f0  branch
-\f1 \'a1\'41\'a7\'f3\'b7\'73\'a4\'75\'a7\'40\'a5\'d8\'bf\'fd\'aa\'ba\'b7\'4e\'ab\'e4\'b4\'4e\'ac\'4f\'a6\'62\'c0\'c9\'ae\'d7\'a7\'a8\'ac\'dd\'b1\'6f\'a8\'ec\'a7\'f3\'b7\'73\'c0\'c9\'ae\'d7\'a1\'41\'a7\'da\'b8\'d1\'c4\'c0\'ac\'b0\'bf\'e9\'a5\'58\'a5\'bb\'be\'f7\'ba\'dd\'a1\'43\'b7\'d3\'b2\'7a\'bb\'a1\'a4\'a3\'ac\'4f\'b3\'6f\'bc\'cb\'b2\'7a\'b8\'d1\'aa\'ba\'a1\'41checkout \'c0\'b3\'b8\'d3\'ac\'4f\'ad\'6e restore file \'aa\'ba
+\f1 \'a1\'41\'a7\'f3\'b7\'73\'a4\'75\'a7\'40\'a5\'d8\'bf\'fd\'aa\'ba\'b7\'4e\'ab\'e4\'b4\'4e\'ac\'4f\'a6\'62\'c0\'c9\'ae\'d7\'a7\'a8\'ac\'dd\'b1\'6f\'a8\'ec\'a7\'f3\'b7\'73\'c0\'c9\'ae\'d7\'a1\'41\'a7\'da\'b8\'d1\'c4\'c0\'ac\'b0\'bf\'e9\'a5\'58\'a5\'bb\'be\'f7\'ba\'dd\'a1\'43\'b7\'d3\'b2\'7a\'bb\'a1\'a4\'a3\'ac\'4f\'b3\'6f\'bc\'cb\'b2\'7a\'b8\'d1\'aa\'ba\'a1\'41checkout \'c0\'b3\'b8\'d3\'ac\'4f\'ad\'6e\'c1\'d9\'ad\'ec\'c0\'c9\'ae\'d7\'aa\'ba
 \f0 ) \
 {\listtext	5.	}
 \f1 \'a6\'58\'a8\'d6\'a4\'c0\'a4\'e4\'a1\'47
@@ -148,4 +163,15 @@
 \f1 \'a4\'ce
 \f0  branch
 \f1 \'a1\'47
-\f0 git branch -vv}
+\f0 git branch -vv\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+
+\f1 \'a8\'e4\'a5\'4c\'a1\'47
+\f0 \
+
+\f1 \'c1\'f4\'c2\'c3\'c0\'c9\'ae\'d7\'a1\'47
+\f0  chflags hidden 
+\f1 file
+\f0 \
+}
